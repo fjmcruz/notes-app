@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactMarkdown from "react-markdown";
 
 function Main({ activeNote, showEdit, setShowEdit, onUpdateNote }) {
