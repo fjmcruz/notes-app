@@ -153,6 +153,7 @@ textarea {
 
 .app-main-note-edit input {
   height: 6vh;
+  min-height: 40px;
   font-size: 2rem;
 }
 
