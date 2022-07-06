@@ -1,0 +1,162 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body,
+.App {
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
+  font-family: "Helvetica";
+  font-size: 16px;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+button {
+  background-color: slategray;
+  border-radius: 8px;
+  border: 0;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+}
+
+button:hover {
+  background-color: steelblue;
+}
+
+.App {
+  display: flex;
+}
+
+/* SIDEBAR STYLES */
+.app-sidebar {
+  background-color: black;
+  border-right: 0.8px solid slategray;
+  color: whitesmoke;
+  height: 100vh;
+  width: 28%;
+}
+
+.app-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.app-sidebar-header h1 {
+  margin: 0;
+}
+
+.app-sidebar-notes {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.app-sidebar-note {
+  cursor: pointer;
+  padding: 24px;
+}
+
+.sidebar-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-sidebar-note button {
+  background-color: crimson;
+}
+
+.app-sidebar-note button:hover {
+  background-color: lightcoral;
+}
+
+.app-sidebar-note p {
+  margin: 8px 0;
+}
+
+.app-sidebar-note small {
+  display: block;
+  color: slategray;
+}
+
+.app-sidebar-note:hover {
+  background: gainsboro;
+  color: black;
+}
+
+.app-sidebar-note.active,
+.app-sidebar-note.active small {
+  background: slategray;
+  color: whitesmoke;
+}
+
+/* NOTE PREVIEW/EDITOR (MAIN) STYLES */
+.app-main-note-preview,
+.app-main-note-edit {
+  width: 72%;
+  height: 100vh;
+}
+
+.app-main-note-preview button,
+.app-main-note-edit button {
+  font-size: 0.8rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.no-active-note {
+  color: slategray;
+  font-size: 2rem;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  width: 72%;
+}
+
+/* PREVIEW */
+.app-main-note-preview {
+  background: rgba(0, 0, 0, 0.02);
+  border-top: 0.8px solid slategray;
+  overflow-y: scroll;
+}
+
+.title-bar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+}
+
+.markdown-preview {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0 24px 24px 20px;
+}
+
+/* EDITOR */
+.app-main-note-edit {
+  padding: 24px;
+}
+
+.app-main-note-edit input,
+textarea {
+  border: 0.8px solid slategray;
+  display: block;
+  padding: 10px;
+  margin-bottom: 12px;
+  resize: none;
+  width: 100%;
+}
+
+.app-main-note-edit input {
+  height: 6vh;
+  min-height: 40px;
+  font-size: 2rem;
+}
+
+.app-main-note-edit textarea {
+  height: 80vh;
+}
